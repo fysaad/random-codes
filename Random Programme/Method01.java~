@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Method01 {
+  public static String functionName(String sen, int pos){
+    String first_str = "I";
+    String last_str = "";
+    for (int i = 1; i<sen.length(); i++){
+      if (i%pos != 0){
+        first_str += sen.charAt(i);
+      }
+      else {
+        last_str += sen.charAt(i);
+      }
+    }
+    String add = first_str + last_str;
+    return add;
+  }
+  public static void main (String [] args){
+    Scanner sc = new Scanner (System.in);
+    System.out.print ("Enter a Sentence: ");
+    String sentence = sc.nextLine();
+    System.out.print ("Enter a Position: ");
+    int position = sc.nextInt();
+    
+    String result = functionName (sentence,position);
+    System.out.print ("New Text: " + result);
+  }
+}

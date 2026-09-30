@@ -1,0 +1,30 @@
+public class CNI {
+  public static void main (String [] args){
+    int a = 56;
+    int b = 25;
+    int c = 12;
+    int temp;
+    
+    /*temp = a;
+    a = b;
+    b = c;
+    c = temp;*/
+    
+    temp = c;
+    b = a;
+    c = b;
+    a = c;
+    
+    System.out.println ( "A = " + c);
+    System.out.println ( "B = " + a);
+    System.out.println ( "C = " + b);
+        
+    /*System.out.println ( "X = " + x);
+    System.out.println ( "Y = " + y);*/
+    
+  }
+}
+
+/*"Value of a goes to b" + 
+Value of b goes to c
+Value of c goes to a*/

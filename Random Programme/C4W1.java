@@ -1,0 +1,39 @@
+import java.util.Scanner;
+public class C4W1 {
+  public static void oneToN(int a ,int n){
+    if(a>n){
+      return;
+    }
+    else {
+      System.out.print(a+" ");
+      oneToN(a+1, n);
+    }
+  }
+  
+  public static void NToone(int a ,int n){
+    if(a<n){
+      return;
+    }
+    else {
+      System.out.print(a+" ");
+      NToone(a-1, n);
+    }
+    System.out.println();
+  }
+  public static void recusiveSum(int n){
+    if (n == 0){
+      return ;
+    }
+    else {
+      System.out.println (recursiveSum(N));
+    }
+  }
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Enter N:");
+    int N = sc.nextInt();
+    oneToN(1,N);
+    NToone(N,1);
+    recusiveSum(N);
+  }
+}

@@ -1,0 +1,8 @@
+public class CNJ {
+  public static void main (String [] args){
+    int salary = 3000;
+    int per = 2.5%;
+    
+    double tax = salary * per;
+    
+    System.out.println ( "Tax " + tax);

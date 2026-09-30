@@ -1,0 +1,7 @@
+public class boolert
+public boolean isPrime(int number) {
+    if (number <= 1) {
+        return false;
+    }
+    return primeCheck(number, 2);
+}

@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class HW2dd {
+  public static void main (String [] args){
+    Scanner sc = new Scanner (System.in);
+    System.out.print ("Enter a String: ");
+    String str = sc.nextLine();
+    String temp = "";
+    for (int i = 1; i <= str.length()-1; i++){
+      char a = str.charAt(i);
+      for (int j = str.length()-1; j >= 0; j--){
+        char S = str.charAt(j);
+        if (a == S){
+        System.out.println ("true");
+      }
+      else {
+        System.out.println ("false");
+      }
+      }
+      
+      
+    }
+  }
+}

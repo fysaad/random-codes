@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class String01{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    System.out.print ("Enter a Text: ");
+    String s1 = sc.nextLine();
+    System.out.print ("Enter another Text: ");
+    String s2 = sc.nextLine();
+    String S = s1+s2;
+    
+    for ( int i = 0; i < S.length(); i++){
+      boolean unique = true;
+      for ( int j = 0; j < S.length(); j++){
+        if ( S.charAt(i) == S.charAt(j) && i != j){
+          unique = false;
+          break;
+        }
+      }
+      if (unique){
+        System.out.print ((char)(S.charAt(i)-32));
+      }
+    }
+    System.out.println();
+    sc.close();
+  }
+}

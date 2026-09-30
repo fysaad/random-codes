@@ -1,0 +1,47 @@
+import java.util.Scanner;
+public class HWP2{
+  public static void main (String[]args){
+    Scanner sc = new Scanner (System.in);
+    System.out.print ("Enter Product Code: ");
+    int code = sc.nextInt();
+    System.out.print ("Enter the Quantity: ");
+    int quan = sc.nextInt();
+    
+    double price1 = 4.00;
+    double price2 = 4.50;
+    double price3 = 5.00;
+    double price4 = 2.00;
+    double price5 = 1.50;
+    
+    if (code == 1){
+      double price =((double)quan * price1);
+      System.out.println ("Item: Hot Dog");
+      System.out.println ("Quantity: " + quan);
+      System.out.println ("Total: " + price);
+    }
+    if (code == 2){
+      double price =((double)quan * price2);
+      System.out.println ("Item: X-Salad");
+      System.out.println ("Quantity: " + quan);
+      System.out.println ("Total: " + price);
+    }
+    if (code == 3){
+      double price =((double)quan * price3);
+      System.out.println ("Item: X-Bacon");
+      System.out.println ("Quantity: " + quan);
+      System.out.println ("Total: " + price);
+    }
+    if (code == 4){
+      double price =((double)quan * price4);
+      System.out.println ("Item: Toast");
+      System.out.println ("Quantity: " + quan);
+      System.out.println ("Total Price: " + price);
+    }
+    if (code == 5){
+      double price =((double)quan * price5);
+      System.out.println ("Item: Soda");
+      System.out.println ("Quantity: " + quan);
+      System.out.println ("Total: " + price);
+    }
+  }
+}

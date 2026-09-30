@@ -1,0 +1,15 @@
+public class Text {
+  public static void main (String [] args){
+  
+    String text = "CSE";
+    String text1 = "";
+    
+    for ( index = 0; index < text.lenth(); index++;){
+      int text_ascii = text.code.Pointt(index);
+      int ascii_l = text_ascii+32;
+      char X = (char)ascii_l;
+      String text1 = text1 + X;
+    }
+    System.out.print (text1);  
+  }
+}
