@@ -1,0 +1,19 @@
+public class 09{
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("Enter a positive integer N: ");
+    int N = scanner.nextInt();
+    int count = 0;
+    int number = 2;
+    
+    System.out.println("The first " + N + " perfect numbers are:");
+    while (count < N) {
+      if (isPerfect(number)) {
+        System.out.println(number);
+        count++;
+      }
+      number++;
+    }
+    scanner.close();
+  }
+}

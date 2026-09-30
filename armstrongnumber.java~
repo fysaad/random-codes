@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class armstrongnumber {
+      public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      
+      int a = sc.nextInt();
+      int b = sc.nextInt();
+      
+       for(int i=a; i<=b; i++){ 
+           int num = i;
+           int temp = num;
+           int c = 0;        
+           while( temp != 0){
+               temp = temp/10;
+               c++;           
+           }
+       
+       int sum=0;
+       for (int k = i; k != 0; k/=10){
+            int p = k%10;
+       sum+=Math.pow(p,c);
+       }
+       
+       if (sum==i){
+       System.out.println(i);
+       }
+       
+    }
+       
+    }
+      
+}
